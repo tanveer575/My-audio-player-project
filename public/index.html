@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:image" content="https://audio-player-ta.web.app/images/webc.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/webc.png" type="image/webc">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="ulest">+
+                <ul id="playlist" class="list"></ul>
+            </div>
+            <button id="favoriteBtn">&#9829;</button>
+            <div class="logo"><img src="images/webc.png" width="30px" height="30px" alt="logo"></div>
+        </header>
+
+        <div class="audio-plyer">
+            <input type="file" id="fileInput" accept="audio/*" multiple />
+            <label for="fileInput" id="fileLabel">Select Audio</label>
+            <img src="images/singing.webp" alt="songer" class="sanger box">
+            <audio id="audio" controls autoplay></audio>
+        </div>
+        <div class="progress-bar">
+            <input type="range" id="progressBar" value="0" max="100">
+            <input type="range" id="volumeControl" value="100" max="100">
+        </div>
+        <div class="buttons">
+            <button id="prevBtn">Prev</button>
+            <button id="playPauseBtn">Play</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
